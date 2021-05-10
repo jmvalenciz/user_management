@@ -1,0 +1,26 @@
+### login
+POST http://localhost:5000/login
+Authorization: Basic jmvalenciz@eafit.edu.co:123456789
+
+### Register
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+    "email":"jmvalenciz@eafit.edu.co",
+    "nombre": "Juan Manuel Valencia Zapata",
+    "password":"123456789"
+}
+
+### Edit User Data
+POST http://localhost:5000/user
+Content-Type: : application/json
+x-access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZFVzdWFyaW8iOjJ9.tIiSjxHO8ZsVsaJW_J20x6qOh3zvNUEh9T908wpP2m4
+
+{
+    "email": "12345"
+}
+
+### Delete User
+DELETE http://localhost:5000/user
+x-access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZFVzdWFyaW8iOjJ9.tIiSjxHO8ZsVsaJW_J20x6qOh3zvNUEh9T908wpP2m4
